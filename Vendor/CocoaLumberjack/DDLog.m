@@ -1,3 +1,5 @@
+#pragma clang diagnostic ignored "-Wimplicit-retain-self"
+
 #import "DDLog.h"
 
 #import <pthread.h>

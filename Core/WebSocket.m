@@ -1,3 +1,8 @@
+#pragma clang diagnostic ignored "-Wlogical-not-parentheses"
+#pragma clang diagnostic ignored "-Wunreachable-code"
+#pragma clang diagnostic ignored "-Wimplicit-retain-self"
+#pragma clang diagnostic ignored "-Wunused-function"
+
 #import "WebSocket.h"
 #import "HTTPMessage.h"
 #import "GCDAsyncSocket.h"

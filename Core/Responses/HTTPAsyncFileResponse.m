@@ -2,6 +2,8 @@
 #import "HTTPConnection.h"
 #import "HTTPLogging.h"
 
+#pragma clang diagnostic ignored "-Wimplicit-retain-self"
+
 #import <unistd.h>
 #import <fcntl.h>
 

@@ -3,6 +3,8 @@
 #import "DDData.h"
 #import "HTTPLogging.h"
 
+#pragma clang diagnostic ignored "-Wmismatched-parameter-types"
+
 #pragma mark log level
 
 #ifdef DEBUG

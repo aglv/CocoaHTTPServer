@@ -35,6 +35,8 @@
 
 @optional
 
+- (NSString *)contentType;
+
 /**
  * If you need time to calculate any part of the HTTP response headers (status code or header fields),
  * this method allows you to delay sending the headers so that you may asynchronously execute the calculations.

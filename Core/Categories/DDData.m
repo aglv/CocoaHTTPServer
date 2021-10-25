@@ -1,3 +1,5 @@
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 #import "DDData.h"
 #import <CommonCrypto/CommonDigest.h>
 

@@ -57,8 +57,11 @@ static DDASLLogger *sharedInstance;
 		// A default asl client is provided for the main thread,
 		// but background threads need to create their own client.
 		
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 		client = asl_open(NULL, "com.apple.console", 0);
-	}
+#pragma clang diagnostic pop
+}
 	return self;
 }
 
@@ -87,7 +90,10 @@ static DDASLLogger *sharedInstance;
 			default             : aslLogLevel = ASL_LEVEL_NOTICE;  break;
 		}
 		
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 		asl_log(client, NULL, aslLogLevel, "%s", msg);
+#pragma clang diagnostic pop
 	}
 }
 

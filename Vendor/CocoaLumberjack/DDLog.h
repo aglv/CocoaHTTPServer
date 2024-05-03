@@ -48,7 +48,7 @@
        level:lvl                                                        \
         flag:flg                                                        \
      context:ctx                                                        \
-        file:__FILE__                                                   \
+        file:__FILE_NAME__                                              \
     function:fnct                                                       \
         line:__LINE__                                                   \
          tag:atag                                                       \
@@ -247,7 +247,7 @@
 
 NSString *DDExtractFileNameWithoutExtension(const char *filePath, BOOL copy);
 
-#define THIS_FILE (DDExtractFileNameWithoutExtension(__FILE__, NO))
+#define THIS_FILE (DDExtractFileNameWithoutExtension(__FILE_NAME__, NO))
 
 /**
  * The THIS_METHOD macro gives you the name of the current objective-c method.
